@@ -1,0 +1,107 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  font-size: 17px;
+  padding:0px 3px;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: green;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.font{
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+
+    }
+    .fontdown{
+      color: white;
+    }
+    .fa-bars{
+      display: none;
+    }
+    .menu{
+      display: block !important;
+    }
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      .menu{
+        display: none !important;
+      }
+      .fa-bars{
+      display: block;
+      }
+      li{
+        padding: 0px 9px;
+      }
+
+    }
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (max-width: 992px) {
+      .menu1{
+        display: block;
+      }
+      .menu{
+        display: none;
+      }
+
+    }
+    
+/* Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 600px) {
+  
+ .menu1{
+  display: block !important;
+ }
+  .fa-bars{
+      display: none;
+      }
+ li{
+    padding: 0px 3px;
+      }
+} 
+    

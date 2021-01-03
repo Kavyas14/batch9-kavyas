@@ -1,0 +1,21 @@
+
+.button2:hover {
+    background-color: green !important;
+}
+b{
+    font-size: 30px;
+}
+.container2{
+    margin-left: 25px;
+
+}
+.button3{
+    margin-left: 50px;
+}
+.button3:hover {
+    background-color: green !important;
+}
+#container{
+  text-align: right;
+  margin-right: 10px;
+}
