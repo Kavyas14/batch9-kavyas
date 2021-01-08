@@ -78,7 +78,10 @@
       font-size: 15px;
     }
     
-    li a, .dropbtn {
+    li a, .
+
+
+btn {
       display: inline-block;
       color: white !important;
       text-align: center;
@@ -90,7 +93,7 @@
       background-color: green;
     }
     
-    li.dropdown1 {
+    li.dropdown {
       display: inline-block;
     }
     
