@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment-2 Form</title>
+   <link rel="stylesheet" type="text/css" href="home.css">
+    <style>
+  
+    </style>
+    </head>
+<body>
+
+<h2>Form</h2>
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" class="input" id="fname" name="fname" ><br><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" class="input" id="lname" name="lname"><br><br>
+  <label for="pwd">Password:</label><br>
+  <input type="password" class="input" id="pwd" name="pwd"><br><br>
+  <label for="pwd">Confirm Password:</label><br>
+  <input type="password" class="input" id="cpwd" name="pwd"><br><br>
+  <label for="fname">Gender:</label><br>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br><br>
+  <label for="phone">Phone number:</label><br>
+  <input type="tel" class="input" id="phone" name="phone" placeholder="xxxxxxxxxx" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+  <label for="birthday">Birthday:</label><br>
+  <input type="date" class="input" id="birthday" name="birthday"><br><br>
+  <label for="cars">Games:</label><br>
+  <select name="games" class="input" id="games">
+    <option value="football">Football</option>
+    <option value="cricket">Cricket</option>
+    <option value="abbadi">Kabbadi</option>
+    <option value="hockey">Hockey</option>
+  </select>
+  <br><br>
+  <label for="cars">Is Active:</label><br>
+  <input type="checkbox" id="active1" name="active1" value="Bike">
+  <label for="vehicle1"> Yes</label>
+  <input type="checkbox" id="active2" name="active2" value="Car">
+  <label for="vehicle2"> No</label>
+  <input type="checkbox" id="active3" name="active3" value="Boat">
+  <label for="vehicle3"> Sometimes</label><br><br>
+  <button class="button" type="submit" form="nameform" value="Submit">Submit</button>
+  <button class="button" type="reset" value="Reset">Reset</button>
+</form>
+
+
+</body>
+</html>

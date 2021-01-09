@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>  
+
+<head>
+  <title>User Management</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .hide {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <b> USER MANAGEMENT LOGIN</b>
+  <div class="jumbotron">
+    <div class="pull-right">
+      <button type="button" class="btn btn-success" onclick="switchForms('login')">LOGIN</button>
+      <button type="button" class="btn btn-success" onclick="switchForms('CreateAccount')">CreateAccount</button>
+    </div>
+    <h2 id="pagetitle">Login Form</h2>
+    <div class="container" id="loginform">
+      <form name="myForm" method="post" onsubmit="return validateForm()">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" >
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd" name="password" placeholder="Enter password" >
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+        <br>
+        <div class="text-center">
+          <button type="submit" class="btn btn-success" onclick="login">Login</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="container" style="display: none;" id="CreateAccount">
+      <form name="myaccountForm" method="post" onsubmit="return validatecreateaccount()">
+        <div name="form-group">
+          <label for="Name">FirstName:</label>
+          <input type="FirstName" class="form-control" id="FirstName" name="firstname" placeholder="Enter FirstName" required>
+        </div>
+        <div class="form-group">
+          <label for="Name">LastName:</label>
+          <input type="LastName" class="form-control" id="LastName" name="lastname" placeholder="Enter LastName">
+        </div>
+        <div class="form-group">
+          <label for="Pwd">Password:</label>
+          <input type="Password" class="form-control" id="Password" name="pwd" placeholder="Enter Password">
+        </div>
+        <div class="form-group">
+          <label for="Pwd">Confim Password:</label>
+          <input type="Password" class="form-control" id="Password" name="ConfimPassword" placeholder="Enter Password">
+        </div>
+        <div class="form-group">
+          <label for="Pwd">Email:</label>
+          <input type="Email" class="form-control" id="Email" name="Email" placeholder="Enter Email">
+        </div>
+        <div class="form-group">
+          <label for="Pwd">Age:</label>
+          <input type="Age" class="form-control" id="Age" name="age" placeholder="Enter Age">
+        </div>
+        <label for="gender">Gender:</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>  
+                <input type="radio" id="male" name="gender" value="others">
+                <label for="others">Others</label><br>
+                <label>FavoriteHero :</label>
+                <select id="FavoriteHero" name="FavoriteHero">
+                    <option value="select">SELECT</option>
+                    <option value="Rajini">Rajini </option>
+                    <option value="Kamal">Kamal</option>
+                    <option value="Vijay">Vijay</option>
+                    <option value="Ajith">Ajith</option>
+                </select><br>
+                <input type="checkbox" id="Admin" name="Admin" value="Admin"required>
+                <label for="Admin"> Adminbox </label>
+       
+        <div class="text-center">
+          <button type="submit" class="btn btn-success" onclick="CreateAccount">CreateAccount</button>
+        </div>
+      </form>
+    </div>
+  </div>  
+
+
+
+  <script src="new.js">
+
+  </script>
+
+</body>
+
+</html>
