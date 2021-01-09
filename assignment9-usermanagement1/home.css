@@ -1,0 +1,85 @@
+*
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.hide{
+    display: none;
+}
+
+
+
+.pull-right{
+    text-align: right;
+}
+.btn {
+  padding: 10px 10px 10px 10px;
+  color: white;
+  background-color: green;
+  cursor: pointer;
+  margin: 8px 0;
+  border-radius: 6px;
+}
+#loginform {
+  text-align: center;
+  width: auto;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-left: 480px;
+}
+h1{
+  color: green;
+}
+.form-group input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-group input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=password]{
+  width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+
+.container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  #createaccountform {
+    width: auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: left;
+    margin-left: 500px;
+}
+  #hero{
+    padding: 8px 15px;
+  }
+
+ 
